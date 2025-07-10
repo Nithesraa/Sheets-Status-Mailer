@@ -25,3 +25,7 @@ Thumbs.db
 coverage/
 # Misc
 *.log
+
+# Credentials
+credentials.json
+backend/credentials.json
