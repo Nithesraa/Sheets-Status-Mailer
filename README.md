@@ -1,93 +1,67 @@
-Google Sheets Email Dashboard
-A modern, intuitive admin dashboard designed for seamless email management and real-time status tracking, fully powered by Google Sheets integration.
+# Google Sheets Email Dashboard
 
-✨ Key Features
-Live Data Sync: Instantly fetches user information and email statuses directly from Google Sheets for up-to-date management.
+A simple admin dashboard for managing and sending emails, with status tracking powered by Google Sheets integration.
 
-Smart Email Controls: Admins can send emails only when a user's status is Completed, ensuring workflow accuracy and preventing mistakes.
+## Features
 
-Status-Based Actions: Effortlessly filter, select, and manage users based on their current status.
+- Fetches user data and email status from Google Sheets
+- Admin can send emails only when status is **Completed**
+- Status-based controls for sending and selecting users
+- Responsive, easy-to-use dashboard interface
 
-Responsive UI: Enjoy a clean, mobile-friendly interface that adapts beautifully to any device.
+## Prerequisites
 
-Easy Customization: Modify components and logic to fit your unique workflow.
+- Node.js (v16+ recommended)
+- Google Sheets API credentials
+- (Optional) Yarn or npm
 
-⚙️ Prerequisites
-Before you begin, make sure you have:
+## Getting Started
 
-Node.js (version 16 or higher recommended)
-
-Google Sheets API credentials (for secure integration)
-
-Yarn or npm (choose your preferred package manager)
-
-🚀 Getting Started
-Follow these steps to launch your dashboard:
-
-1. Clone the Repository
-bash
+1. **Clone the repository:**
+'''
 git clone https://github.com/yourusername/google-sheets-email-dashboard.git
 cd google-sheets-email-dashboard
-2. Install Dependencies
-bash
-# Using npm
+'''
+
+2. **Install dependencies:**
+'''
 npm install
-
-# Or using yarn
+or
 yarn install
-3. Configure Environment Variables
-Duplicate .env.example and rename it to .env.
+'''
 
-Open .env and enter your Google Sheets API keys, Sheet ID, and any other required configuration.
+3. **Set up environment variables:**
+'''
+- Copy `.env.example` to `.env` and fill in your Google Sheets API keys and other config.
+'''
 
-4. Start the Development Server
-bash
-# Using npm
+4. **Run the development server:**
+'''
 npm start
-
-# Or using yarn
+or
 yarn start
-The dashboard will be available at http://localhost:3000 (or your configured port).
+'''
 
-5. Build for Production
-bash
-# Using npm
+5. **Build for production:**
+'''
 npm run build
-
-# Or using yarn
+or
 yarn build
-This will generate optimized production-ready files.
+'''
 
-🗂️ Project Structure
-Folder/File	Purpose
-/src	React frontend source code (UI, components, styles)
-/backend	Node.js backend (API endpoints, business logic)
-/google_sheets.py	Python script for Google Sheets integration and automation
-🎨 Customization Guide
-Google Sheets Integration:
-Update your Sheet ID and API credentials in the .env file for secure, personalized access.
+## Project Structure
+'''
+- `/src` — React frontend source code
+- `/backend` — Node.js backend (if present)
+- `/google_sheets.py` — Google Sheets integration script
+'''
 
-UI Components:
-Tweak or extend the dashboard’s look and feel by editing files in /src/components.
+## Customization
+'''
+- Update the Google Sheets ID and API credentials in your `.env` file.
+- Modify UI components in `/src/components` as needed.
+'''
 
-Backend Logic:
-If you need to add custom endpoints or business rules, modify the code in /backend.
+---
 
-Automation Scripts:
-Enhance data handling or automate tasks via /google_sheets.py.
-
-💡 Tips & Best Practices
-Protect your credentials: Never commit sensitive API keys to version control.
-
-Use environment variables: Store all configuration in .env for easy updates and security.
-
-Mobile-first design: The dashboard is responsive, but you can further tailor breakpoints in the CSS.
-
-🤝 Contributing & Support
-Questions?
-Open an issue on the repository for help or feature requests.
-
-Want to contribute?
-Fork the repo and submit a pull request with your improvements.
-
-Empower your admin workflow with a beautiful, robust dashboard—customizable to your needs and always in sync with Google Sheets!
+*For questions or contributions, please open an issue or submit a pull request.*
